@@ -1,0 +1,125 @@
+body {
+	font-family: 'Roboto', sans-serif;
+	background: linear-gradient(to bottom, #ddddee, #333344);
+	margin: 0px;
+	padding: 0px;
+}
+header {
+	box-sizing: border-box;
+	width: 100%;
+	position: fixed;
+	top: 0px;
+	background-color: #333399;
+	color: white;
+	margin: 0px;
+	padding: 10px 20px;
+}
+nav ul {
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+}
+
+nav li {
+ 	float: left;
+ 	margin: 0px;
+ 	padding: 0px;
+}
+
+nav li a {
+	display: inline-block;
+	border: 1px solid #aaaaee;
+	padding: 10px 20px;
+	margin: 0px 5px;
+	color: #bbbbff;
+	background-color: #333366;
+	text-decoration: none;
+}
+
+nav li a:hover {
+	background-color: #3333dd;
+	color: white;
+}	
+
+nav h4 {
+	display: none;
+}
+header h1 {
+	float: left;
+	font-weight: 100;
+	margin: 0px;
+	padding: 0px;
+}
+
+header nav {
+	float: right;
+}
+main {
+	width: 600px;
+	margin: 150px auto 0px;
+	padding: 20px;
+	background-color: white;
+	color: #444;
+	box-shadow: 5px 5px 10px #444;
+	border-radius: 20px;
+	font-size: 1.1em;
+}
+main h2 {
+	font-size: 1.8em;
+	font-weight: 300;
+	color: #000000;
+	text-align: center;
+	margin: -20px -20px 0px;
+	padding: 5px 0;
+	background: linear-gradient(to left, red, yellow,red);
+	border-top-right-radius: 15px;
+	border-top-left-radius: 15px;
+}
+main h3{
+	background: linear-gradient(to left,yellow, red, yellow);
+	color:white;
+	text-align: center;
+	box-shadow: 5px 5px 20px brown;
+	
+}
+main img {
+	position: absolute;
+	top: 60px;
+	left: 10px;
+	z-index: -1;
+}
+main table {
+	border-collapse: collapse;
+}
+
+main td, main th {
+	border: 1px solid black;
+	padding: 5px 10px
+}
+
+main th {
+	background-color: #ff4422;
+	color: white;
+}
+
+main tr:nth-child(even) {
+	background-color: #ffff00;
+}
+main ul {
+	li1st-style: square;
+}
+
+main ol {
+	list-style: lower-roman;
+}
+
+main p {
+	text-indent: 20px;
+	text-align: justify;
+}
+footer {
+	text-align: center;
+	color: #ccccff;
+	padding: 20px 0 40px;
+}
+
