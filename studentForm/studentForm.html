@@ -53,12 +53,12 @@
 
 
 <!-- background -->
-<body style="background-image: url('images/bg-01.gif');">
+<body style="background-image: url('images/bg-01.gif'); background-size: cover; background-attachment: fixed;">
 
 
 <!-- Sidebar Menu -->
 <div class="sidenav">
-  <a href="file:///C:/Users/Rob/Desktop/HTML%20practice/SAD/HOME/Home.html">Home</a>
+  <a href="file:///C:/Users/Rob/Desktop/HTML%20Practice/SAD/SAD/HOME/Home.html">Home</a>
   <a href="#Quick Search">Quick Search</a>
   <a href="#Current Database">Current Database</a>
   <a href="#Full Database">Full Database</a>
@@ -75,11 +75,12 @@
 
 <div class="container" style="padding-top: 20px;">
 	<div class="jumbotron">
-		<h1>Audition Form</h1>
+		<h1 style="text-align: center;">Audition Form</h1>
 		
-		<p>You can exit the form at any time by clicking any of the menu locations</p>
+		<br>
 
 		<h2>Please Answer the Following</h2>
+    <br>
 	
 	<form>
 		
@@ -87,35 +88,34 @@
     	<label for="Fname">First Name</label>
     	<input type="text" class="form-control" id="Fname" placeholder="John">
  	</div>
-  	<div class="form-group">
+  <div class="form-group">
     	<label for="Lname">Last Name</label>
     	<input type="text" class="form-control" id="Fname" placeholder="Smith">
-  	</div>
-  		<div class="form-group">
-  		<label for="email">Email</label>
-    	<input type="email" class="form-control" id="email" placeholder="je12smit@siena.edu">
-  	</div>
-  		<div class="form-group">
-  		<label for="phoneNumber">Phone Number</label>
-    	<input type="text" class="form-control" id="phoneNumber" placeholder="111-222-3333">
-  	</div>
-  	<div class="form-group">
+  </div>
+  <div class="form-group">
   		<label for="pronoun">Preferred Pronoun</label>
     	<input type="text" class="form-control" id="pronoun" placeholder="">
-  	</div>
-
-  	<div class="form-group">
-  		<label for="Class Year">Class Year</label>
-		<select name="Class Year">
+  </div>
+  <div class="form-group">
+  		<label for="email">Email</label>
+    	<input type="email" class="form-control" id="email" placeholder="je12smit@siena.edu">
+  </div>
+  <div class="form-group">
+  		<label for="classYear">Class Year</label>
+		<select name="classYear">
  			<option value="2019">2019</option>
   			<option value="2020">2020</option>
   			<option value="2021">2021</option>
   			<option value="2022">2022</option>
 		</select>
 	</div>
-
-	<p>Residential Status</p>
+  <div class="form-group">
+  		<label for="phoneNumber">Phone Number</label>
+    	<input type="text" class="form-control" id="phoneNumber" placeholder="111-222-3333">
+  </div>
+	<label for="btn-group">Residential Status</label><br>
 	<div class="btn-group" data-toggle="buttons">
+
   		<label class="btn btn-primary active">
     		<input type="radio" name="resStatus" id="resident" checked> Resident (preselected)
   		</label>
@@ -123,9 +123,67 @@
     		<input type="radio" name="resStatus" id="commuter"> Commuter
   		</label>
 	</div>
+  <br>
+  <br>
+  <br>
+
+  <div class="form-group">
+      <label for="priorExp">List prior perforing experience:</label>
+      <textarea class="form-control" rows="5" id="priorExp" placeholder="shows, role played and when. or paste resume"></textarea>
+  </div>
 
 	<br>
 	<br>
+
+  <div class="form-group">
+      <label for="priorTeam">List any experience you have in an ensamble or group:</label>
+      <textarea class="form-control" rows="5" id="priorTeam"></textarea>
+  </div>
+
+  <br>
+  <br>
+
+  <div class="form-group">
+      <label for="makesCollabWork">Name some things that make collaboration work:</label>
+      <textarea class="form-control" rows="2" id="makesCollabWork"></textarea>
+  </div>
+
+  <br>
+  <br>
+
+  <div class="form-group">
+      <label for="prefferedRole">Is there a particular role you are interested in?</label>
+      <input type="text" class="form-control" id="prefferedRole">
+  </div>
+
+  <br>
+  <br>
+
+  <div class="form-group">
+      <label for="talents">What talents do you have to add to this show?</label>
+      <textarea class="form-control" rows="2" id="talents" placeholder="Gymnastics, instrument, juggling, magic, dance, etc"></textarea>
+  </div>
+
+  <br>
+  <br>
+
+  <div class="form-group">
+      <label for="artisticAbil">What other artistic abilities can you offer this performance?</label>
+      <textarea class="form-control" rows="2" id="artisticAbilr" placeholder="Writing, painting, graphic design, video..."></textarea>
+  </div>
+
+  <br>
+  <br>
+
+  <label>Would you be interested in any technical role if not cast?<br>
+  (Stage management, lights, sound, running crew, assistant stage management)</label><br>
+  <input type="radio" name="techRoleInterest" value="yes"> Yes<br>
+  <input type="radio" name="techRoleInterest" value="no"> No<br>
+
+  <br>
+  <br>
+
+
 
   	<div class="form-group">
     	<label for="headshot">Headshot</label>
