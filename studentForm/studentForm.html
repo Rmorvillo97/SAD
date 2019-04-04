@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Student Form</title>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+		<style>
+
+
+.sidenav {
+  width: 230px;
+  position: fixed;
+  z-index: 1;
+  top: 20px;
+  left: 10px;
+  background: #eee;
+  overflow-x: hidden;
+  padding: 8px 0;
+  border-radius: 15px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #007658;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #fdc426;
+}
+
+.main {
+  margin-left: 140px; /* Same width as the sidebar + left position in px */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+</head>
+
+
+
+
+
+
+
+
+<!-- background -->
+<body style="background-image: url('images/bg-01.gif');">
+
+
+<!-- Sidebar Menu -->
+<div class="sidenav">
+  <a href="file:///C:/Users/Rob/Desktop/HTML%20practice/SAD/HOME/Home.html">Home</a>
+  <a href="#Quick Search">Quick Search</a>
+  <a href="#Current Database">Current Database</a>
+  <a href="#Full Database">Full Database</a>
+  <a href="#Settings">Settings</a>
+  <a href="#"> </a>
+  <a href="#"> </a>
+  <a href="#Sign Out">Sign Out</a>
+</div>
+
+
+
+
+
+
+<div class="container" style="padding-top: 20px;">
+	<div class="jumbotron">
+		<h1>Audition Form</h1>
+		
+		<p>You can exit the form at any time by clicking any of the menu locations</p>
+
+		<h2>Please Answer the Following</h2>
+	
+	<form>
+		
+	<div class="form-group">
+    	<label for="Fname">First Name</label>
+    	<input type="text" class="form-control" id="Fname" placeholder="John">
+ 	</div>
+  	<div class="form-group">
+    	<label for="Lname">Last Name</label>
+    	<input type="text" class="form-control" id="Fname" placeholder="Smith">
+  	</div>
+  		<div class="form-group">
+  		<label for="email">Email</label>
+    	<input type="email" class="form-control" id="email" placeholder="je12smit@siena.edu">
+  	</div>
+  		<div class="form-group">
+  		<label for="phoneNumber">Phone Number</label>
+    	<input type="text" class="form-control" id="phoneNumber" placeholder="111-222-3333">
+  	</div>
+  	<div class="form-group">
+  		<label for="pronoun">Preferred Pronoun</label>
+    	<input type="text" class="form-control" id="pronoun" placeholder="">
+  	</div>
+
+  	<div class="form-group">
+  		<label for="Class Year">Class Year</label>
+		<select name="Class Year">
+ 			<option value="2019">2019</option>
+  			<option value="2020">2020</option>
+  			<option value="2021">2021</option>
+  			<option value="2022">2022</option>
+		</select>
+	</div>
+
+	<p>Residential Status</p>
+	<div class="btn-group" data-toggle="buttons">
+  		<label class="btn btn-primary active">
+    		<input type="radio" name="resStatus" id="resident" checked> Resident (preselected)
+  		</label>
+  		<label class="btn btn-primary">
+    		<input type="radio" name="resStatus" id="commuter"> Commuter
+  		</label>
+	</div>
+
+	<br>
+	<br>
+
+  	<div class="form-group">
+    	<label for="headshot">Headshot</label>
+    	<input type="file" id="headshot">
+  	</div>
+
+
+
+  	 <button type="button" class="btn btn-success">Submit</button>
+
+	</form>
+
+
+
+	</div>
+</div>
+
+
+
+</body>
+</html>
