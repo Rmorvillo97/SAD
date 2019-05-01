@@ -3,13 +3,12 @@
 <head>
   <!-- ADDS ICON TO BROWSER TAB -->
   <link rel="icon" type="image/png" href="https://www.siena.edu/siena_favicon.png"/>
-	<title>SAD Home</title>
+	<title>Admin Form</title>
     <!--LINKS TO BOOTSTRAP 3 FOR CSS-->
-	<link rel="stylesheet" type="text/css" href="
-	https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-	<style>
-
-
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+		<style>
 .sidenav {
   width: 230px;
   position: fixed;
@@ -21,7 +20,6 @@
   padding: 8px 0;
   border-radius: 15px;
 }
-
 .sidenav a {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
@@ -29,17 +27,14 @@
   color: #007658;
   display: block;
 }
-
 .sidenav a:hover {
   color: #fdc426;
 }
-
 .main {
   margin-left: 140px; /* Same width as the sidebar + left position in px */
   font-size: 28px; /* Increased text to enable scrolling */
   padding: 0px 10px;
 }
-
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
@@ -48,10 +43,15 @@
 </head>
 
 
-<!-- Background -->
-<body style="background-image: url('images/bg-01.gif'); ">
 
-<div>
+
+
+
+
+
+<!-- background -->
+<body style="background-image: url('images/bg-01.gif'); background-size: cover; background-attachment: fixed;">
+
 
 <!-- Sidebar Menu -->
 <div class="sidenav">
@@ -66,14 +66,54 @@
 </div>
 
 
+
+
+
+
 <div class="container" style="padding-top: 20px;">
 	<div class="jumbotron">
-		<h1>Welcome to the Siena Acting Database</h1>
-		<p>If you would like to fill out a form click the button below</p>
-		<a href="file:///C:/Users/Rob/Desktop/HTML%20practice/SAD/studentForm/studentForm.html" class="btn btn-success btn-lg">Fill out form</a>
+		<h1 style="text-align: center;">Admin Form</h1>
+		
+		<br>
+
+		<h2>Please Answer the Following</h2>
+    <br>
+	
+	<form>
+		
+	<div class="form-group">
+    	<label for="Fname">First Name</label>
+    	<input type="text" class="form-control" id="Fname" placeholder="John">
+ 	</div>
+  <div class="form-group">
+    	<label for="Lname">Last Name</label>
+    	<input type="text" class="form-control" id="Fname" placeholder="Smith">
+  </div>
+  <div class="form-group">
+  		<label for="email">Email</label>
+    	<input type="email" class="form-control" id="email" placeholder="je12smit@siena.edu">
+  </div>
+  <div class="form-group">
+  		<label for="phoneNumber">Phone Number</label>
+    	<input type="text" class="form-control" id="phoneNumber" placeholder="111-222-3333">
+  <br>
+  <br>
+  <br>
+
+  
+
+
+  	 <button type="button" class="btn btn-success">Submit</button>
+     <a href="file:///C:/Users/Rob/Desktop/HTML%20practice/SAD/settings/settings.html" class="btn btn-danger">Cancel</a>
+
+	</form>
+
+
+
 	</div>
 </div>
-</div>
+
+
 
 </body>
 </html>
